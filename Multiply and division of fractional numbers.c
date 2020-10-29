@@ -12,7 +12,8 @@ Multiplication result is 8.000000
 Division result is 0.500000*/
 
 #include <stdio.h>
-int main(void) {
+int main(void)
+{
   float a,b,c,d;
   printf("\n");
   scanf("%f %f",&a,&b);
