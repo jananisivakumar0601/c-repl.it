@@ -31,3 +31,37 @@ void swap(int x,int y)
   y=x-y;
   x=x-y;
 }
+
+  
+  
+
+/*Write a C program to swap two numbers using pointers
+Accept two integer numbers through keyboard
+pass the address of two inputs to a swap() function
+in the function definition retrieve the inputs using pointers and have the swapping logic
+Sample Input
+enter 2 numbers to swap
+22
+44
+
+Sample Output
+before swapping a and b are 22 and 44
+after swapping a and b are 44 and 22*/
+
+#include <stdio.h>
+
+int main(void) {
+  int a,b,c;
+  int *d,*e;
+  d=&a;
+  e=&b;
+  printf("enter 2 numbers to swap\n");
+  scanf("%d %d",&a,&b);
+  printf("before swapping a and b are %d %d\n",a,b);
+  c=*d;
+  *d=*e;
+  *e=c;
+  printf("after swapping a and b are %d  %d",*d,*e);
+  
+  return 0;
+}
